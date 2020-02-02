@@ -3,6 +3,7 @@
 const quote = document.getElementById('quote');
 const author = document.getElementById('author');
 const button = document.getElementById('button').addEventListener('click', test);
+let random;
 const quotes = [
     {
         quote: "Once you make a decision, the universe conspires to make it happen.",
@@ -35,9 +36,11 @@ const quotes = [
 ];
 
 function test() {
-    quote.style.backgroundColor = 'red';
-    quote.textContent = 'test';
-}
+    random = Math.floor(Math.random() * quotes.length); // instead of * 16, target the length of the array by * array.length
+    quote.textContent = quotes[random].quote;
+    author.textContent = quotes[random].author;
 
-console.log(quotes[1].quote);
-console.log(quotes[1].author);
+    // access an array and print to console
+    console.log(quotes[random].quote);
+    console.log(quotes[random].author);
+}
