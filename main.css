@@ -1,8 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rosybrown;
+}
+
+.container {
+    text-align: center;
+}
+
 .box {
-    display: block;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     border: 1px solid black;
+    /* border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px 0px 10px 0px; /*cool, you can assign border radius values this way */
+    width: 1200px;
+    height: 380px;
     max-width: 80%;
     max-height: 100%;
+    text-align: center;
+    box-shadow: 5px 10px 12px black;
+    background-color: white;
+    margin: 30px 0px 0px 0px;
+    border-bottom: 15px solid palevioletred;;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+}
+
+h2{
+    text-align: center;
+    margin: 60px;
+}
+
+h3 {
+    text-align: end;
+    margin: 20px 70px 0px 0px;
+}
+
+button {
+    font-size: 1em;
+    padding: 15px 23px;
+    border-radius: 10px;
+    background-color: pink;
+    /* border: .5px solid maroon; */
+    outline: none;
+    color: white;
+    transition: background-color .5s;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 30px 0px 0px 0px;
+}
+
+button:hover {
+    background-color: palevioletred;
+    border-bottom: 1.5px solid black;
 }
