@@ -1,6 +1,7 @@
 // variables
 
-const box = document.getElementById('box');
+const quote = document.getElementById('quote');
+const author = document.getElementById('author');
 const button = document.getElementById('button').addEventListener('click', test);
 const quotes = [
     {
@@ -34,6 +35,9 @@ const quotes = [
 ];
 
 function test() {
-    box.style.backgroundColor = 'red';
-    box.textContent = 'test';
+    quote.style.backgroundColor = 'red';
+    quote.textContent = 'test';
 }
+
+console.log(quotes[1].quote);
+console.log(quotes[1].author);
