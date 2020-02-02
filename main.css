@@ -23,7 +23,7 @@ body {
     box-shadow: 5px 10px 12px black;
     background-color: white;
     margin: 30px 0px 0px 0px;
-    border-bottom: 15px solid palevioletred;;
+    border-bottom: 15px solid palevioletred;
 }
 
 h1 {
@@ -46,7 +46,6 @@ button {
     padding: 15px 23px;
     border-radius: 10px;
     background-color: pink;
-    /* border: .5px solid maroon; */
     outline: none;
     color: white;
     transition: background-color .5s;
@@ -57,5 +56,5 @@ button {
 
 button:hover {
     background-color: palevioletred;
-    border-bottom: 1.5px solid black;
+    border-bottom: 1.6px solid black;
 }
